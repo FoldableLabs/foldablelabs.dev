@@ -1,0 +1,66 @@
+<!doctype html>
+<!--
+  DRAFT. Host at https://foldablelabs.dev/pixchecker/privacy/ (the app links there).
+  Before publishing:
+  - Don't name the detection vendor (owner's decision, 2026-10-11); describe it as a third-party AI detection service.
+  - Only describe what we do with images. Make no claims about what the detection companies do.
+  - Usage records are described in general terms on purpose (owner's choice). Never add a statement
+    that we keep no usage or analytics data: the backend keeps per-ID usage records indefinitely.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PixChecker Privacy Policy</title>
+<style>
+  :root { --bg: #F4F6FA; --ink: #15181E; --body: #454C58; --line: #DCE1EA; --blue: #1E5BD8; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #111317; --ink: #F2F4F7; --body: #C3C8D1; --line: #2B3039; --blue: #7FA6F5; } }
+  body { margin: 0; background: var(--bg); color: var(--body); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1, h2 { color: var(--ink); line-height: 1.25; }
+  h1 { font-size: 32px; margin: 0 0 4px; }
+  h2 { font-size: 21px; margin: 36px 0 8px; }
+  a { color: var(--blue); }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 8px; border-bottom: 1px solid var(--line); }
+  th { color: var(--ink); }
+  .meta { font-size: 15px; }
+</style>
+</head>
+<body>
+<main>
+<h1>PixChecker Privacy Policy</h1>
+<p class="meta">Last updated: November 7, 2026</p>
+
+<p>PixChecker is made by Foldable Labs ("we"). We have no accounts, no ads, and we never sell your data or use it to track you.</p>
+
+<h2>Images you check</h2>
+<p>When you check an image, the app removes its location data and sends it over an encrypted connection to our server, which passes it to a third-party AI detection service and returns the result. We don't store your images or use them to train AI. The app asks your permission before your first check.</p>
+<p>The app also reads the image file on your phone for AI labels and camera details. If the file says an AI tool made it, the app answers without sending the image and only tells our server the tool's name.</p>
+
+<h2>Data we keep</h2>
+<ul>
+  <li><strong>A random app ID</strong> created by the app (not your name, email or Apple Account), used to check your subscription.</li>
+  <li><strong>A record of each check:</strong> its time, the answer and score, and whether you were in a free trial. Never the image. We use these records to run, protect and improve the service.</li>
+  <li><strong>Purchase status</strong> from Apple, through RevenueCat, to unlock the app and restore purchases.</li>
+  <li><strong>Server logs</strong> (such as IP address and time), kept by our host Google Cloud for about 30 days for security.</li>
+</ul>
+<p>The app also uses Apple App Attest through Google Firebase to confirm requests come from the real app.</p>
+
+<h2>Your history</h2>
+<p>Your past checks are saved only on your phone. You can delete them in the app, and deleting the app removes them.</p>
+
+<h2>Sharing</h2>
+<p>We share data only with the service providers named above and the detection service, only so they can provide their part of the app, and they're required to protect it. We'll disclose data if the law requires it.</p>
+
+<h2>Retention and your choices</h2>
+<p>Check records are kept while needed for the purposes above. To ask for a copy of your data or to have it deleted, email us; since we don't know who you are, include roughly when you used the app so we can find your records. You can stop all data collection by deleting the app.</p>
+
+<h2>Children</h2>
+<p>PixChecker isn't directed to children under 13, and we don't knowingly collect their personal information.</p>
+
+<h2>Changes and contact</h2>
+<p>We'll update the date above if this policy changes. Questions: <a href="mailto:foldablelabs@gmail.com">foldablelabs@gmail.com</a>.</p>
+</main>
+</body>
+</html>
